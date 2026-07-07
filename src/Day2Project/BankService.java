@@ -19,7 +19,7 @@ public class BankService {
 
     public void deposit(double amount) {
 
-        if (accountCreated) {
+        if (!accountCreated) {
             System.out.println("Please create an account first.");
             return;
         }
@@ -35,7 +35,7 @@ public class BankService {
 
     public void withdraw(double amount) {
 
-        if (accountCreated) {
+        if (!accountCreated) {
             System.out.println("Please create an account first.");
             return;
         }
